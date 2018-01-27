@@ -1,0 +1,194 @@
+
+<!DOCTYPE html> 
+<html>
+	<head> 
+
+		<meta charset="utf-8"> 
+		
+		<meta name="author" content="Andrea Ortiz"> 
+		
+		<meta name="description" content="DEscripcion de sitio web">
+		
+		<meta name="keyword" content="tutoriales, html, desarrollo web">
+		
+		<title>Estructura del cuerpo</title> 
+		
+		<link rel="icon" href="C:/Users/Anny/Dropbox/proyectos/Escuela/img/img _ico.png">
+		
+		
+	</head>
+
+	<body>
+
+		<center><h3>Formulario</h3>
+			<form> <!-- porque dentro de un formulario??-->
+
+				<!--Entrada de texto-->
+				<label for="texto">Entrada de texto</label> 
+				<input id="texto" type="text" placeholder="Entrada de texto" value="" required>
+				<!--
+				 Value=juan... aparecera en la pagina
+				 readonly 'solo lectura'
+				 lable for="texto" & id="texto" activan el input
+				 required campo requerido-->
+
+				 <br>
+				 <br>
+
+				 <label for="correo">Entrada de correo</label> 
+				<input id="correo" type="email" placeholder="Entrada de correo" value="" required>
+				<!-- type]="email" nos manda una alerta de que debemos poner un @-->
+
+				<br>
+				<br>
+
+				 <label for="pass">Entrada de contraseña</label> 
+				<input id="pass" type="password" placeholder="Entrada de contraseña" value="" required>
+				<!--type="password" no muestra el texto escrito -->
+
+				<br>
+				<br>
+
+				<input type="number" value="1" min="0" max="3">
+
+				<br>
+				<br>
+
+				<select>
+					<option>Opcion 1</option>
+					<option>opcion 2</option>
+					<option>opcion 3</option>
+				</select>
+
+				<br>
+				<br>
+
+				<input type="checkbox" id="rojo"><label for="rojo">Rojo</label>
+				<input type="checkbox" id="zul"><label for="azul">Azul</label>
+				<input type="checkbox" id="amarillo"><label for="amarillo">Amarillo</label>
+
+				<br>
+				<br>
+
+				<input type="radio" id="blanco" name="radio" checked=""><label for="blanco">Blanco</label>
+				<input type="radio" id="gris" name="radio"><label for="gris">Gris</label>
+				<!--Con esta etiqueta solo odemos elegir una opc
+				name"radio"... al tener los dos el mismo nombre solo se puede seleccionar uno
+				checked inicia con uno checkeado -->
+
+				<br>
+				<br>
+
+				<input type="submit" value="Enviar formulario">
+
+
+			</form>
+		</center>
+
+		<header>
+			<div id="logotipo"> logoticpo</div>
+		</header> <!--Cabecera -->
+
+		<nav>Barra de navegacion</nav> <!-- barra de navegacion -->
+
+		<section> Seccion principal</section> <!-- seccion del sitio -->
+
+		<aside>
+			<div class="noticias">Noticia 1</div>
+			<div class="noticias">Noticia 2</div>
+			<div class="noticias">Noticia 3</div>
+		</aside> <!-- identificar columnas  -->
+
+		<article> Artiulo</article> <!-- para articulos-->
+
+		<h1>Titulo</h1> <!--Titulos h1 - h6 -->
+		<h2>Titulo</h2>
+		<h3>Titulo</h3>
+		<h4>Titulo</h4>
+		<h5>Titulo</h5>
+		<h6>Titulo</h6>
+
+		<p>Esto es un <b> parrafo</b>, <br> eso es otro parrafo</p> 
+		<!--
+		<p> para parrafos
+		<b> negrita
+		<br> salto de linea-->
+
+		<hr> <!--  Una linea-->
+
+		<a href="#"> Vinvulo </a>
+
+		<figure>
+		<!--para ordenar nuestras imagines-->
+			<img src="C:/Users/Anny/Dropbox/proyectos/Escuela/img/css3.png">
+		</figure>
+		<figcaption>Pie de pagina de la img</figcaption>
+
+		<ol>
+		<!-- Lista Organizada/numerica-->
+			<li>Carro</li>
+			<li>Barco</li>
+			<li>Avion</li>
+		</ol>
+
+		<ul>
+		<!-- Lista no organizada-->
+			<li>Carro</li>
+			<li>Barco</li>
+			<li>Avion</li>
+		</ul>
+
+		<!-- Tabla -->
+		<table border="1">
+		<!--Encabezados-->
+		<thead>
+			<!-- Columna 1 -->
+			<tr>
+				<!--Fila 1-->
+				<th>Mes</th>
+				<!--Fila 2-->
+				<th>Ahorro</th>
+			<tr>		
+		</thead>
+		<!--Cuerpo de la tabla-->
+		<tbody>
+			<!-- Columna 2 -->
+			<tr>
+				<!--Fila 1-->
+				<td>Enero</td>
+				<!--Fila 2-->
+				<td>$100</td>
+			<tr>
+			<!-- Columna 3 -->
+			<tr>
+				<!--Fila 1-->
+				<td>Febrero</td>
+				<!--Fila 2-->
+				<td>$200</td>
+			<tr>
+		</tbody>
+
+		</table>
+
+		<!-- Indicador de valores -->
+		<h1>Resultados del Examen</h1>
+		<p>Carlos: <meter value="94" min="6" max="100" high="90"></meter></p>
+		<p>Andrea: <meter value="60" min="6" max="100" high="90"></meter></p>
+		<p>Ana: <meter value="85" min="6" max="100" high="90"></meter></p>
+		<p>Pedro: <meter value="45" min="6" max="100" high="90"></meter></p>
+
+		<h2>REsultado de ventas</h2> <!--Hecha para ciertos navegadores que no leen 'meter'-->
+		<p>Enero: <progress value="94" min="0" max="100"></p>
+		<p>Febrero: <progress value="60" min="0" max="100"></p>
+		<p>MArzo: <progress value="85" min="0" max="100"></p>
+		<p>Abril: <progress value="40" min="0" max="100"></p>
+
+		<!--Div -->
+
+
+		<footer>Este es el pie de pagina </footer>
+
+
+	</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Maestros</title>
+
+	<link rel="icon" href="C:/Users/Anny/Dropbox/proyectos/Escuela/img/maestros.png">
+
+	<style>
+
+		header{
+			/*posicion relativa para las cajas principales*/
+			/*proimera caja del flujo de nodos*/
+			position: relative; 
+			margin: 20px auto; /*tambien estan las propiedades: top lef*/
+			width: 1100px;
+			height: 180px;
+			background: #444; /*-- Escala de Grises de 000 al FFF */
+		}
+
+		#info{
+			position: absolute;
+			bottom: 0px;
+			left: : 0px; /*rigth:0;*/
+			margin: 2px 2px; /*tambien estan las propiedades: top lef*/
+			width: 500px;
+			height: 100px;
+			background: blue;
+		}
+
+		#salir{
+			position: absolute;
+			bottom: 0px;
+			right: 0px; /*rigth:0;*/
+			margin: 2px 2px; /*tambien estan las propiedades: top lef*/
+			width: 500px;
+			height: 100px;
+			background: blue;
+		}
+
+		section{
+			position: relative; 
+			margin: 20px auto; /*tambien estan las propiedades: top lef*/
+			width: 1100px;
+			height: 500px;
+			background: #ccc;
+		}
+
+		#botones{
+			position: absolute;
+			top: 0px;
+			left: 0px; /*rigth:0;*/
+			width: 500px;
+			height: 450px;
+			background: #B0B0B0 ;
+		}
+
+		#agregar{
+			position: absolute;
+			top: 0px;
+			right: 0px; /*rigth:0;*/
+			width: 550px;
+			height: 100px;
+			background: #606060  ;
+		}
+
+		#tabla{
+			position: absolute;
+			bottom: 0px;
+			right: 0px; /*rigth:0;*/
+			width: 550px;
+			height: 390px;
+			background: #505050; 
+		}
+
+
+
+	</style>
+
+</head>
+
+<body>
+	
+	<header>
+
+	<!--info de usuario-->
+	<div id="info">
+
+		<img  src="C:/Users/Anny/Dropbox/proyectos/Escuela/img/usuario.png" width="80" height="80">
+		<label>Admin</label>
+		
+	</div>
+
+	<!--Boton de salir-->
+	<div id="salir">
+
+		<form action="C:/Users/Anny/Dropbox/proyectos/Escuela/index.html" method="get">
+		<input type="submit" value="Salir"> 			
+		</form> 
+		
+	</div>
+		
+		
+	</header>
+
+	<section>
+
+		
+		<div id="botones">
+
+		<div id="botones">
+
+			<!--Maestros-->
+			<form action="C:/Users/Anny/Dropbox/proyectos/Escuela/maestros.html" method="get">
+			<input type="submit" value="Maestros"> 			
+			</form>
+
+			<form action="C:/Users/Anny/Dropbox/proyectos/Escuela/alumnos.html" method="get">
+			<input type="submit" value="Alumnos"> 			
+			</form>
+			
+		</div>
+			
+		</div>
+
+		
+		<div id="agregar">
+
+		<h3>boton agregar</h3>
+			
+		</div>
+
+		<div id="tabla"> 
+		<h3>lista maestros</h3>
+		</div>
+		
+	</section>
+
+</body>
+</html>

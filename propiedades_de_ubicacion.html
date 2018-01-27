@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Propiedades de ubicacion</title>
+
+<style>
+/*formatear los valores que viene por defecto*/
+/* selector universal */
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	}
+
+/*seleccion a traves de etiqueta*/
+header{
+	/*posicion relativa para las cajas principales*/
+	/*proimera caja del flujo de nodos*/
+	position: relative; 
+	margin: 20px auto; /*tambien estan las propiedades: top lef*/
+	width: 1000px;
+	height: 120px;
+	background: #444; /*-- Escala de Grises de 000 al FFF */
+}
+
+/*seleccion a traves de id*/
+#logo{
+	/* esto nos permite poner una caja interna en una principal*/
+	position: absolute;
+	/*posicion de la caja*/ 
+	top:30px; /*bottom:0;*/
+	left: 30px; /*rigth:0;*/
+	width: 200px;
+	height: 60px;
+	background: #ccc;
+}
+
+/*seleccion a traves de clase*/
+.redes{
+	position: absolute; 
+	width: 42px;
+	height: 42px;
+	background: #ccc;
+	border-radius: 100%; 
+}
+
+#icono1{
+	top: 42px;
+	right: 120px;
+}
+#icono2{
+	top: 42px;
+	right: 71px;
+}
+#icono3{
+	top: 42px;
+	right: 19px;
+}
+
+nav{
+	position: relative; 
+	margin: auto; /*tambien estan las propiedades: top lef*/
+	width: 1000px;
+	height: 48px;
+}
+
+.botones{
+	float:left; /*invierte la pocicion*/
+	width: 196px;
+	height: 48px;
+	margin: 0px 2px;
+	background: #333;
+}
+
+#top{
+	position: relative; 
+	margin: 20px auto; /*tambien estan las propiedades: top lef*/
+	width: 1000px;
+	height: 192px;
+	/*background: #888;*/
+}
+
+/*para acomodar la parte superior*/
+#top ul{
+	width: 1010px;
+	height: 192px;
+	/*background: rgba(255,0,0,.5); /*transparecncia*/
+}
+
+/*seleccion a traves de ruta*/
+#top ul li{
+	float: left;
+	width: 326px;
+	height: 192px;
+	background:black;
+	margin-right: 10px;
+
+}
+
+section{
+	position: relative; 
+	margin: 20px auto; /*tambien estan las propiedades: top lef*/
+	width: 1000px;
+	height: 453px;
+	background: #aaa;
+}
+
+/*etiqueta y id junto ya que es la misma caja*/
+aside#izq{
+	position: absolute;
+	top:0px; /*bottom:0;*/
+	left: 0px; /*rigth:0;*/
+	width: 200px;
+	height: 453px;
+	background: #333;
+}
+
+article{
+	position: absolute;
+	top:0px; /*bottom:0;*/
+	left: 200px; /*rigth:0;*/
+	width: 600px;
+	height: 453px;
+	background: blue;
+}
+
+aside#der{
+	position: absolute;
+	top:0px; /*bottom:0;*/
+	right: 0px; /*rigth:0;*/
+	width: 200px;
+	height: 453px;
+	background: #333;
+}
+
+footer{
+	position: relative; 
+	margin: 20px auto; /*tambien estan las propiedades: top lef*/
+	width: 1000px;
+	height: 70px;
+	background: #888;
+}
+
+
+</style>
+
+</head>
+<body>
+
+	<!--Cabezal-->
+	<header>
+		<div id="logo"></div>
+
+		<div id="icono1" class="redes"></div>
+		<div id="icono2" class="redes"></div>
+		<div id="icono3" class="redes"></div>
+	</header>
+
+<!--Barra de navegacio-->
+<nav>
+	<ul>
+		<li class="botones"></li>
+		<li class="botones"></li>
+		<li class="botones"></li>
+		<li class="botones"></li>
+		<li class="botones"></li>
+	</ul>
+</nav>
+
+<!--Parte superior-->
+<div id="top">
+	<ul>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>
+
+<!--Seccion-->
+<section>
+	<aside id="izq"></aside>
+
+	<article></article>
+
+	<aside id="der"></aside>
+</section>
+
+<!--Pie de pagina-->
+<footer></footer>
+
+</body>
+</html>
